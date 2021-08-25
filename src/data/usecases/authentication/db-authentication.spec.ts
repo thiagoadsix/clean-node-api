@@ -1,9 +1,11 @@
-import { AccountModel } from '../../../domain/models'
-import { AuthenticationModel } from '../../../domain/usecases/authentication'
-import { HashCompare } from '../../protocols/cryptography/hash-compare'
-import { TokenGenerator } from '../../protocols/cryptography/token-generator'
-import { UpdateAccessTokenRepository } from '../../protocols/cryptography/update-access-token-repository'
-import { LoadAccountByEmailRepository } from '../../protocols/db/load-account-by-email-repository'
+import {
+  LoadAccountByEmailRepository,
+  AccountModel,
+  HashCompare,
+  TokenGenerator,
+  UpdateAccessTokenRepository,
+  AuthenticationModel
+} from './db-authentication-protocols'
 import { DbAuthentication } from './db-authentication'
 
 const makeLoadAccountByEmailRepository = (): LoadAccountByEmailRepository => {
