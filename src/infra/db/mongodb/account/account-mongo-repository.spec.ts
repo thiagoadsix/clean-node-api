@@ -1,7 +1,7 @@
 import { Collection } from 'mongodb'
 import { MongoHelper } from '../helpers/mongo-helper'
-import { AccountMongoRepository } from './account'
-import { AccountMapper } from './account-mapper'
+import { AccountMongoRepository } from './account-mongo-repository'
+import { AccountMapper } from './account-mongo-repository-mapper'
 
 let accountCollection: Collection
 
